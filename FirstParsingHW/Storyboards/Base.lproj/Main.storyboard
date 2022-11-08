@@ -30,12 +30,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="1Gu-H2-Mod" kind="presentation" identifier="showJoke" id="M4q-bD-K2N"/>
+                                    <segue destination="ROl-9a-ndU" kind="presentation" identifier="showJoke" modalPresentationStyle="fullScreen" id="M4q-bD-K2N"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NSX-2f-Fql" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NM8-hu-f4H"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NSX-2f-Fql" secondAttribute="trailing" constant="40" id="PFo-Yq-T8B"/>
@@ -45,32 +45,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95" y="4"/>
+            <point key="canvasLocation" x="461" y="3"/>
         </scene>
-        <!--Joke View Controller-->
+        <!--Joke-->
         <scene sceneID="Ea8-eq-b5P">
             <objects>
                 <viewController id="1Gu-H2-Mod" customClass="JokeViewController" customModule="FirstParsingHW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L0W-tF-sIO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGl-Kn-e8y">
-                                <rect key="frame" x="40" y="219" width="240" height="24"/>
+                                <rect key="frame" x="40" y="190" width="240" height="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWN-PM-rhm">
-                                <rect key="frame" x="40" y="343" width="240" height="24"/>
+                                <rect key="frame" x="40" y="314" width="240" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6t7-7Z-sTa"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HWN-PM-rhm" firstAttribute="top" secondItem="rGl-Kn-e8y" secondAttribute="bottom" constant="100" id="3lf-ng-tVr"/>
                             <constraint firstItem="6t7-7Z-sTa" firstAttribute="bottom" secondItem="HWN-PM-rhm" secondAttribute="bottom" constant="181" id="FL8-8v-J0p"/>
@@ -80,6 +80,9 @@
                             <constraint firstItem="6t7-7Z-sTa" firstAttribute="trailing" secondItem="rGl-Kn-e8y" secondAttribute="trailing" constant="40" id="vgu-uS-k1z"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Joke" image="person.wave.2" catalog="system" id="4LQ-ic-rXx">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="jokeLabel" destination="HWN-PM-rhm" id="RnH-BI-8P4"/>
                         <outlet property="setupLabel" destination="rGl-Kn-e8y" id="Zd9-2V-mkk"/>
@@ -87,10 +90,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Kl-p3-E0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1234" y="3"/>
+            <point key="canvasLocation" x="2063" y="-305"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LC0-bg-FTs">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ROl-9a-ndU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KUL-w3-kIg">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1Gu-H2-Mod" kind="relationship" relationship="viewControllers" id="I3p-1I-b6T"/>
+                        <segue destination="qSs-Rt-Agt" kind="relationship" relationship="viewControllers" id="zJ8-JV-PtQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lq-rI-438" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233.75" y="3.1690140845070425"/>
+        </scene>
+        <!--About joke-->
+        <scene sceneID="ddi-Tc-w92">
+            <objects>
+                <tableViewController id="qSs-Rt-Agt" customClass="AboutJokeViewController" customModule="FirstParsingHW" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="xh3-gd-8lj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="TmU-73-9em">
+                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TmU-73-9em" id="Vya-Jr-jgf">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qSs-Rt-Agt" id="4ui-Ho-eAZ"/>
+                            <outlet property="delegate" destination="qSs-Rt-Agt" id="NS7-7o-DxM"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="About joke" image="brain" catalog="system" id="spo-Gi-5F3"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZq-va-aDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2063" y="407"/>
         </scene>
     </scenes>
     <resources>
+        <image name="brain" catalog="system" width="128" height="107"/>
+        <image name="person.wave.2" catalog="system" width="128" height="118"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

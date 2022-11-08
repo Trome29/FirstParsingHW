@@ -15,8 +15,14 @@ class MainViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let jokeVC = segue.destination as? JokeViewController else { return }
-        jokeVC.fetchJoke()
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarVC.viewControllers else { return }
+        
+        viewControllers.forEach {
+            if let jokeVC = $0 as? JokeViewController {
+                jokeVC.fetchJoke()
+            }
+        }
     }
 }
 
