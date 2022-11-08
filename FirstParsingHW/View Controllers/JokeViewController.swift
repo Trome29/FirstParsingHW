@@ -37,5 +37,14 @@ class JokeViewController: UIViewController {
             }
         }
      }
+    
+    @IBAction func getJoke() {
+        activityIndicator.startAnimating()
+        fetchJoke()
+        activityIndicator.hidesWhenStopped = true
+        
+        
+    }
+    
 }
 
