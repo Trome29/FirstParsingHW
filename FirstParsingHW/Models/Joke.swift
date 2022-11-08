@@ -12,7 +12,7 @@ struct Joke: Decodable {
     let setup: String?
     let delivery: String?
     let joke: String?
-    let flags: [String : Bool]
+    let flags: [String: Bool]
     let id: Int
     let safe: Bool
     let lang: String
