@@ -41,17 +41,13 @@ class JokeViewController: UIViewController {
     // MARK: - Navigation
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        guard let aboutJokeVC = segue.destination as? AboutJokeViewController else { return }
-//        aboutJokeVC.category = 
+//        aboutJokeVC.category =
 //    }
     
     @IBAction func getJoke() {
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
         fetchJoke()
-        
-        
-        
     }
-    
 }
 

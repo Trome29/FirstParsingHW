@@ -9,6 +9,8 @@ import UIKit
 
 class AboutJokeViewController: UIViewController {
     
+    //var joke: Joke
+    
     @IBOutlet var categoryLabel: UILabel!
     @IBOutlet var typeLabel: UILabel!
     @IBOutlet var flagsLabel: UILabel!
