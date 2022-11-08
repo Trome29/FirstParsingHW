@@ -64,7 +64,7 @@
 		3070C8FE29153B69009BD72F /* FirstParsingHW */ = {
 			isa = PBXGroup;
 			children = (
-				3070C917291545DB009BD72F /* View Controllers */,
+				3070C917291545DB009BD72F /* ViewControllers */,
 				3070C91529154596009BD72F /* Models */,
 				30FF82D7291AC117005AAC9D /* Services */,
 				3070C918291545EB009BD72F /* Storyboards */,
@@ -92,14 +92,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		3070C917291545DB009BD72F /* View Controllers */ = {
+		3070C917291545DB009BD72F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				3070C90329153B69009BD72F /* MainViewController.swift */,
 				30FF82CE291A956F005AAC9D /* JokeViewController.swift */,
 				30FF82D5291AB29D005AAC9D /* AboutJokeViewController.swift */,
 			);
-			path = "View Controllers";
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		3070C918291545EB009BD72F /* Storyboards */ = {
