@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSX-2f-Fql">
-                                <rect key="frame" x="15" y="260" width="290" height="48"/>
+                                <rect key="frame" x="40" y="260" width="240" height="48"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,8 +38,8 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NSX-2f-Fql" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NM8-hu-f4H"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NSX-2f-Fql" secondAttribute="trailing" constant="15" id="PFo-Yq-T8B"/>
-                            <constraint firstItem="NSX-2f-Fql" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="iLx-gq-rJH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NSX-2f-Fql" secondAttribute="trailing" constant="40" id="PFo-Yq-T8B"/>
+                            <constraint firstItem="NSX-2f-Fql" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="iLx-gq-rJH"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -54,15 +55,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWN-PM-rhm">
-                                <rect key="frame" x="40" y="262" width="240" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGl-Kn-e8y">
+                                <rect key="frame" x="40" y="219" width="240" height="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGl-Kn-e8y">
-                                <rect key="frame" x="40" y="170" width="240" height="24"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWN-PM-rhm">
+                                <rect key="frame" x="40" y="343" width="240" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -71,8 +72,8 @@
                         <viewLayoutGuide key="safeArea" id="6t7-7Z-sTa"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="HWN-PM-rhm" firstAttribute="top" secondItem="rGl-Kn-e8y" secondAttribute="bottom" constant="68" id="3lf-ng-tVr"/>
-                            <constraint firstItem="HWN-PM-rhm" firstAttribute="centerY" secondItem="L0W-tF-sIO" secondAttribute="centerY" id="6s1-VR-VYh"/>
+                            <constraint firstItem="HWN-PM-rhm" firstAttribute="top" secondItem="rGl-Kn-e8y" secondAttribute="bottom" constant="100" id="3lf-ng-tVr"/>
+                            <constraint firstItem="6t7-7Z-sTa" firstAttribute="bottom" secondItem="HWN-PM-rhm" secondAttribute="bottom" constant="181" id="FL8-8v-J0p"/>
                             <constraint firstItem="HWN-PM-rhm" firstAttribute="leading" secondItem="6t7-7Z-sTa" secondAttribute="leading" constant="40" id="MXt-SE-89c"/>
                             <constraint firstItem="rGl-Kn-e8y" firstAttribute="leading" secondItem="6t7-7Z-sTa" secondAttribute="leading" constant="40" id="fet-Nw-ztq"/>
                             <constraint firstItem="6t7-7Z-sTa" firstAttribute="trailing" secondItem="HWN-PM-rhm" secondAttribute="trailing" constant="40" id="jf2-aH-cgc"/>
@@ -86,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Kl-p3-E0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="891" y="4"/>
+            <point key="canvasLocation" x="1234" y="3"/>
         </scene>
     </scenes>
     <resources>

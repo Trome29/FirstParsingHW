@@ -28,7 +28,6 @@ class JokeViewController: UIViewController {
                     self?.setupLabel.text = data.setup
                     self?.jokeLabel.text = data.delivery
                 }
-                //self?.activityIndicator.stopAnimating()
             case .failure(let error):
                 print(error)
             }

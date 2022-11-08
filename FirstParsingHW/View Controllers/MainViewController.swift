@@ -18,8 +18,5 @@ class MainViewController: UIViewController {
         guard let jokeVC = segue.destination as? JokeViewController else { return }
         jokeVC.fetchJoke()
     }
-    
-    @IBAction func getJoke() {
-    }
 }
 
