@@ -14,6 +14,7 @@ class JokeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchJoke()
     }
     
     func fetchJoke() {
@@ -23,7 +24,6 @@ class JokeViewController: UIViewController {
                 if data.joke != nil {
                     self?.jokeLabel.text = data.joke
                     self?.setupLabel.text = "🙊"
-                    
                 } else {
                     self?.setupLabel.text = data.setup
                     self?.jokeLabel.text = data.delivery
