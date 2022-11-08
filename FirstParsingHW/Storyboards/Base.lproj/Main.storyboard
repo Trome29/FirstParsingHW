@@ -98,12 +98,12 @@
                         <constraints>
                             <constraint firstItem="NUL-Ll-DFz" firstAttribute="leading" secondItem="6t7-7Z-sTa" secondAttribute="leading" constant="60" id="09R-TO-uQA"/>
                             <constraint firstItem="aot-Es-ijg" firstAttribute="centerY" secondItem="L0W-tF-sIO" secondAttribute="centerY" id="70f-so-vwO"/>
-                            <constraint firstItem="6t7-7Z-sTa" firstAttribute="bottom" secondItem="NUL-Ll-DFz" secondAttribute="bottom" constant="40" id="Grq-VZ-9km"/>
                             <constraint firstItem="rxC-CQ-iFQ" firstAttribute="leading" secondItem="6t7-7Z-sTa" secondAttribute="leading" constant="16" id="K0B-7s-FRk"/>
                             <constraint firstItem="6t7-7Z-sTa" firstAttribute="trailing" secondItem="rxC-CQ-iFQ" secondAttribute="trailing" constant="16" id="KYT-0R-YK8"/>
-                            <constraint firstItem="rxC-CQ-iFQ" firstAttribute="top" secondItem="6t7-7Z-sTa" secondAttribute="top" constant="40" id="OsD-SZ-xKt"/>
                             <constraint firstItem="6t7-7Z-sTa" firstAttribute="trailing" secondItem="NUL-Ll-DFz" secondAttribute="trailing" constant="60" id="PBg-TY-ZJN"/>
+                            <constraint firstItem="NUL-Ll-DFz" firstAttribute="top" secondItem="aot-Es-ijg" secondAttribute="bottom" constant="184.5" id="VIl-Ih-um0"/>
                             <constraint firstItem="aot-Es-ijg" firstAttribute="centerX" secondItem="L0W-tF-sIO" secondAttribute="centerX" id="bod-uQ-oLl"/>
+                            <constraint firstItem="rxC-CQ-iFQ" firstAttribute="top" secondItem="6t7-7Z-sTa" secondAttribute="top" constant="40" id="dpo-ed-eJx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TCb-a2-Ows">
