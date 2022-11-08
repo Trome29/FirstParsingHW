@@ -14,6 +14,10 @@ class AboutJokeViewController: UIViewController {
     @IBOutlet var flagsLabel: UILabel!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
+    var category: String!
+    var type: String!
+    var flags: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicator.startAnimating()

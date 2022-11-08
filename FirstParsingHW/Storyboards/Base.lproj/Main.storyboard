@@ -77,7 +77,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUL-Ll-DFz">
-                                <rect key="frame" x="80" y="448" width="160" height="30"/>
+                                <rect key="frame" x="80" y="498" width="160" height="30"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,10 +97,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NUL-Ll-DFz" firstAttribute="leading" secondItem="6t7-7Z-sTa" secondAttribute="leading" constant="80" id="09R-TO-uQA"/>
+                            <constraint firstItem="6t7-7Z-sTa" firstAttribute="bottom" secondItem="NUL-Ll-DFz" secondAttribute="bottom" constant="40" id="Grq-VZ-9km"/>
                             <constraint firstItem="rxC-CQ-iFQ" firstAttribute="leading" secondItem="6t7-7Z-sTa" secondAttribute="leading" constant="40" id="K0B-7s-FRk"/>
                             <constraint firstItem="6t7-7Z-sTa" firstAttribute="trailing" secondItem="rxC-CQ-iFQ" secondAttribute="trailing" constant="40" id="KYT-0R-YK8"/>
                             <constraint firstItem="6t7-7Z-sTa" firstAttribute="trailing" secondItem="NUL-Ll-DFz" secondAttribute="trailing" constant="80" id="PBg-TY-ZJN"/>
-                            <constraint firstItem="NUL-Ll-DFz" firstAttribute="top" secondItem="HWN-PM-rhm" secondAttribute="bottom" constant="110" id="bh8-dy-REF"/>
                             <constraint firstItem="rxC-CQ-iFQ" firstAttribute="centerY" secondItem="L0W-tF-sIO" secondAttribute="centerY" id="xYY-u6-LYT"/>
                         </constraints>
                     </view>
