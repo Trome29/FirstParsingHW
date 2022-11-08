@@ -19,8 +19,10 @@ class AboutJokeViewController: UIViewController {
         super.viewDidLoad()
         displayInfo(in: dataLabel)
     }
+}
 
     // MARK: - Private methods
+extension AboutJokeViewController {
     private func displayInfo(in labels: [UILabel]) {
         labels.forEach { label in
             switch label.tag {
