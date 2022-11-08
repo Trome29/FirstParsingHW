@@ -94,7 +94,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6t7-7Z-sTa"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="NUL-Ll-DFz" firstAttribute="leading" secondItem="6t7-7Z-sTa" secondAttribute="leading" constant="60" id="09R-TO-uQA"/>
                             <constraint firstItem="aot-Es-ijg" firstAttribute="centerY" secondItem="L0W-tF-sIO" secondAttribute="centerY" id="70f-so-vwO"/>
@@ -245,7 +245,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kYm-89-EmW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="Ne3-yQ-vGl" firstAttribute="leading" secondItem="kYm-89-EmW" secondAttribute="leading" constant="20" id="A3S-hS-yXF"/>
                             <constraint firstItem="Ne3-yQ-vGl" firstAttribute="top" secondItem="kYm-89-EmW" secondAttribute="top" constant="40" id="qM3-JX-lrf"/>
@@ -279,7 +279,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qgn-wH-yi7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -295,9 +295,6 @@
         <image name="brain" catalog="system" width="128" height="107"/>
         <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="person.wave.2" catalog="system" width="128" height="118"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
