@@ -8,20 +8,20 @@
 import UIKit
 
 class AboutJokeViewController: UIViewController {
+    // MARK: - IBOutlets
     @IBOutlet var dataLabel: [UILabel]!
     
+    // MARK: - Public properties
     var joke: Joke!
     
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-//        categoryLabel.text = joke?.category
-//        typeLabel.text = joke?.type
         displayInfo(in: dataLabel)
-        
     }
 
-    func displayInfo(in labels: [UILabel]) {
+    // MARK: - Private methods
+    private func displayInfo(in labels: [UILabel]) {
         labels.forEach { label in
             switch label.tag {
             case 0:

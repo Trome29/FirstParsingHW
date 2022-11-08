@@ -7,8 +7,8 @@
 
 struct Joke: Decodable {
     let error: Bool
-    let category: String?
-    let type: String?
+    let category: String
+    let type: String
     let setup: String?
     let delivery: String?
     let joke: String?
