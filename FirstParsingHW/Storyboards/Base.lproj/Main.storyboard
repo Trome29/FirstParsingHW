@@ -29,7 +29,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="getJoke" destination="BYZ-38-t0r" eventType="touchUpInside" id="o4X-XL-DNs"/>
                                     <segue destination="1Gu-H2-Mod" kind="presentation" identifier="showJoke" id="M4q-bD-K2N"/>
                                 </connections>
                             </button>
@@ -56,13 +55,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWN-PM-rhm">
-                                <rect key="frame" x="16" y="262" width="288" height="24"/>
+                                <rect key="frame" x="40" y="262" width="240" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGl-Kn-e8y">
-                                <rect key="frame" x="16" y="170" width="288" height="24"/>
+                                <rect key="frame" x="40" y="170" width="240" height="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,10 +73,10 @@
                         <constraints>
                             <constraint firstItem="HWN-PM-rhm" firstAttribute="top" secondItem="rGl-Kn-e8y" secondAttribute="bottom" constant="68" id="3lf-ng-tVr"/>
                             <constraint firstItem="HWN-PM-rhm" firstAttribute="centerY" secondItem="L0W-tF-sIO" secondAttribute="centerY" id="6s1-VR-VYh"/>
-                            <constraint firstItem="HWN-PM-rhm" firstAttribute="leading" secondItem="6t7-7Z-sTa" secondAttribute="leading" constant="16" id="MXt-SE-89c"/>
-                            <constraint firstItem="rGl-Kn-e8y" firstAttribute="leading" secondItem="6t7-7Z-sTa" secondAttribute="leading" constant="16" id="fet-Nw-ztq"/>
-                            <constraint firstItem="6t7-7Z-sTa" firstAttribute="trailing" secondItem="HWN-PM-rhm" secondAttribute="trailing" constant="16" id="jf2-aH-cgc"/>
-                            <constraint firstItem="6t7-7Z-sTa" firstAttribute="trailing" secondItem="rGl-Kn-e8y" secondAttribute="trailing" constant="16" id="vgu-uS-k1z"/>
+                            <constraint firstItem="HWN-PM-rhm" firstAttribute="leading" secondItem="6t7-7Z-sTa" secondAttribute="leading" constant="40" id="MXt-SE-89c"/>
+                            <constraint firstItem="rGl-Kn-e8y" firstAttribute="leading" secondItem="6t7-7Z-sTa" secondAttribute="leading" constant="40" id="fet-Nw-ztq"/>
+                            <constraint firstItem="6t7-7Z-sTa" firstAttribute="trailing" secondItem="HWN-PM-rhm" secondAttribute="trailing" constant="40" id="jf2-aH-cgc"/>
+                            <constraint firstItem="6t7-7Z-sTa" firstAttribute="trailing" secondItem="rGl-Kn-e8y" secondAttribute="trailing" constant="40" id="vgu-uS-k1z"/>
                         </constraints>
                     </view>
                     <connections>

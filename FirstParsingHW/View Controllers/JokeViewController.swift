@@ -14,7 +14,6 @@ class JokeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchJoke()
     }
     
     func fetchJoke() {

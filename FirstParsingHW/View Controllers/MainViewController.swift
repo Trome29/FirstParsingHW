@@ -13,30 +13,13 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
     }
     
-//    // MARK: - Navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//        if segue.identifier == "showJoke" {
-//            guard let jokeVC = segue.destination as? JokeViewController else { return }
-//            jokeVC.fetchJoke()
-//        }
-//    }
-    
-    @IBAction func getJoke() {
-//        fetchJoke()
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let jokeVC = segue.destination as? JokeViewController else { return }
+        jokeVC.fetchJoke()
     }
     
+    @IBAction func getJoke() {
+    }
 }
-// MARK: - Networking
-//extension MainViewController {
-//    func fetchJoke() {
-//        NetworkManager.shared.fetchJoke(Joke.self, from: NetworkManager.shared.url) { result in
-//            switch result {
-//            case .success(let data):
-//                print(data)
-//            case .failure(let error):
-//                print(error)
-//            }
-//        }
-//    }
-//}
+
