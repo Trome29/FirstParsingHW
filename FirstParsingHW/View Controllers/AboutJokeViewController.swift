@@ -12,9 +12,12 @@ class AboutJokeViewController: UIViewController {
     @IBOutlet var categoryLabel: UILabel!
     @IBOutlet var typeLabel: UILabel!
     @IBOutlet var flagsLabel: UILabel!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
         fetchJoke()
     }
     
@@ -24,9 +27,15 @@ class AboutJokeViewController: UIViewController {
             case .success(let data):
                 self?.categoryLabel.text = data.category ?? ""
                 self?.typeLabel.text = data.type ?? ""
-// подумать как реализовать только true
-                let flags = data.flags.keys.map {$0}.joined(separator: ", ")
-                self?.flagsLabel.text = flags
+                for value in data.flags.values {
+                    if value {
+                        let flags = data.flags.keys.map {$0}.joined(separator: ", \n")
+                        self?.flagsLabel.text = flags
+                    } else {
+                        self?.flagsLabel.text = "🙊"
+                    }
+                }
+                self?.activityIndicator.stopAnimating()
             case .failure(let error):
                 print(error)
             }
