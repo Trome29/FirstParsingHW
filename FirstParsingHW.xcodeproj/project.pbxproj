@@ -16,7 +16,7 @@
 		3070C91429153BBA009BD72F /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070C91329153BBA009BD72F /* Joke.swift */; };
 		30FF82CD291A9453005AAC9D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FF82CC291A9453005AAC9D /* NetworkManager.swift */; };
 		30FF82CF291A956F005AAC9D /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FF82CE291A956F005AAC9D /* JokeViewController.swift */; };
-		30FF82D6291AB29D005AAC9D /* AboutJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FF82D5291AB29D005AAC9D /* AboutJokeViewController.swift */; };
+		30FF82D1291AA9A7005AAC9D /* AboutJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FF82D0291AA9A7005AAC9D /* AboutJokeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		3070C91329153BBA009BD72F /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		30FF82CC291A9453005AAC9D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		30FF82CE291A956F005AAC9D /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
-		30FF82D5291AB29D005AAC9D /* AboutJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutJokeViewController.swift; sourceTree = "<group>"; };
+		30FF82D0291AA9A7005AAC9D /* AboutJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutJokeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +64,10 @@
 		3070C8FE29153B69009BD72F /* FirstParsingHW */ = {
 			isa = PBXGroup;
 			children = (
-				3070C917291545DB009BD72F /* ViewControllers */,
 				3070C91529154596009BD72F /* Models */,
-				30FF82D7291AC117005AAC9D /* Services */,
+				3070C917291545DB009BD72F /* View Controllers */,
+				3070C916291545A0009BD72F /* Supporting Files */,
 				3070C918291545EB009BD72F /* Storyboards */,
-				3070C916291545A0009BD72F /* App */,
 				3070C91929154606009BD72F /* Sources */,
 			);
 			path = FirstParsingHW;
@@ -82,24 +81,25 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		3070C916291545A0009BD72F /* App */ = {
+		3070C916291545A0009BD72F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				3070C8FF29153B69009BD72F /* AppDelegate.swift */,
 				3070C90129153B69009BD72F /* SceneDelegate.swift */,
+				30FF82CC291A9453005AAC9D /* NetworkManager.swift */,
 				3070C90D29153B6A009BD72F /* Info.plist */,
 			);
-			path = App;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3070C917291545DB009BD72F /* ViewControllers */ = {
+		3070C917291545DB009BD72F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				3070C90329153B69009BD72F /* MainViewController.swift */,
 				30FF82CE291A956F005AAC9D /* JokeViewController.swift */,
-				30FF82D5291AB29D005AAC9D /* AboutJokeViewController.swift */,
+				30FF82D0291AA9A7005AAC9D /* AboutJokeViewController.swift */,
 			);
-			path = ViewControllers;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		3070C918291545EB009BD72F /* Storyboards */ = {
@@ -117,14 +117,6 @@
 				3070C90829153B6A009BD72F /* Assets.xcassets */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		30FF82D7291AC117005AAC9D /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				30FF82CC291A9453005AAC9D /* NetworkManager.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +193,7 @@
 				3070C90429153B69009BD72F /* MainViewController.swift in Sources */,
 				3070C90029153B69009BD72F /* AppDelegate.swift in Sources */,
 				30FF82CD291A9453005AAC9D /* NetworkManager.swift in Sources */,
-				30FF82D6291AB29D005AAC9D /* AboutJokeViewController.swift in Sources */,
+				30FF82D1291AA9A7005AAC9D /* AboutJokeViewController.swift in Sources */,
 				3070C90229153B69009BD72F /* SceneDelegate.swift in Sources */,
 				3070C91429153BBA009BD72F /* Joke.swift in Sources */,
 				30FF82CF291A956F005AAC9D /* JokeViewController.swift in Sources */,
@@ -353,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 46T9YD5R9W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FirstParsingHW/App/Info.plist;
+				INFOPLIST_FILE = "FirstParsingHW/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -385,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 46T9YD5R9W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FirstParsingHW/App/Info.plist;
+				INFOPLIST_FILE = "FirstParsingHW/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
