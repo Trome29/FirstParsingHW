@@ -5,18 +5,13 @@
 //  Created by Roman on 08.11.2022.
 //
 
-import Foundation
 import Alamofire
 
-enum NetworkError: Error {
-    case invalidURL
-    case noData
-    case decodingError
+enum Link: String {
+    case url = "https://v2.jokeapi.dev/joke/Any"
 }
 
 class NetworkManager {
-    let url = "https://v2.jokeapi.dev/joke/Any" //change
-    
     static let shared = NetworkManager()
     
     private init() {}

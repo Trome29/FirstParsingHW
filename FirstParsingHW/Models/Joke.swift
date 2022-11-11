@@ -21,14 +21,6 @@ struct Joke: Decodable {
         case joke
     }
     
-//    init(category: String, type: String, setup: String?, delivery: String?, joke: String?) {
-//        self.category = category
-//        self.type = type
-//        self.setup = setup
-//        self.delivery = delivery
-//        self.joke = joke
-//    }
-    
     init(jokeData: [String: Any]) {
         category = jokeData["category"] as? String ?? ""
         type = jokeData["type"] as? String ?? ""
@@ -39,8 +31,7 @@ struct Joke: Decodable {
     
     static func getJoke(from value: Any) -> Joke {
         guard let jokeData = value as? [String: Any] else { return value as! Joke} //change
-        let joke = Joke(jokeData: jokeData)
-        return joke
+        return Joke(jokeData: jokeData)
     }
 }
 
