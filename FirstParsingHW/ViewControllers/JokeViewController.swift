@@ -21,6 +21,10 @@ class JokeViewController: UIViewController {
         super.viewDidLoad()
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
+        
+        fetchJoke()
+        
+        
     }
     
     // MARK: - Navigation
@@ -31,24 +35,23 @@ class JokeViewController: UIViewController {
     
     // MARK: - Public methods
     func fetchJoke() {
-        NetworkManager.shared.fetchJoke(Joke.self, from: NetworkManager.shared.url) { [weak self] result in
+        activityIndicator.stopAnimating()
+        NetworkManager.shared.fetchJoke(form: NetworkManager.shared.url) { [weak self] result in
             switch result {
-            case .success(let data):
-                self?.joke = data
-                if data.joke != nil {
+            case .success(let joke):
+                self?.joke = joke
+                if self?.joke.type == "single" {
                     self?.jokeLabel.text = self?.joke.joke
-                    self?.setupLabel.text = "🙉"
+                    self?.setupLabel.text = ""
                 } else {
-                    self?.setupLabel.text = self?.joke.setup
                     self?.jokeLabel.text = self?.joke.delivery
+                    self?.setupLabel.text = self?.joke.setup
                 }
-                self?.activityIndicator.stopAnimating()
             case .failure(let error):
-                print(error)
+                print(error.localizedDescription)
             }
         }
-     }
-    
+    }
     // MARK: - IBActions
     @IBAction func getJoke() {
         activityIndicator.startAnimating()

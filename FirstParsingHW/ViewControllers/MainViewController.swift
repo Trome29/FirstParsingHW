@@ -11,12 +11,9 @@ class MainViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let navigationVC = segue.destination as? UINavigationController else { return }
-        let topVC = navigationVC.topViewController
-        guard let jokeVC = topVC as? JokeViewController else {
-            return
-        }
-        jokeVC.fetchJoke()
+//        guard let navigationVC = segue.destination as? UINavigationController else { return }
+//        guard let jokeVC = navigationVC.topViewController as? JokeViewController else { return }
+//        //jokeVC.fetchJoke()
     }
 }
 
