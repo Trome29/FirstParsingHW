@@ -16,7 +16,6 @@
 		3070C91429153BBA009BD72F /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3070C91329153BBA009BD72F /* Joke.swift */; };
 		30FF82CD291A9453005AAC9D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FF82CC291A9453005AAC9D /* NetworkManager.swift */; };
 		30FF82CF291A956F005AAC9D /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FF82CE291A956F005AAC9D /* JokeViewController.swift */; };
-		30FF82D6291AB29D005AAC9D /* AboutJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FF82D5291AB29D005AAC9D /* AboutJokeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		3070C91329153BBA009BD72F /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		30FF82CC291A9453005AAC9D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		30FF82CE291A956F005AAC9D /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
-		30FF82D5291AB29D005AAC9D /* AboutJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutJokeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				30FF82CE291A956F005AAC9D /* JokeViewController.swift */,
-				30FF82D5291AB29D005AAC9D /* AboutJokeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,7 +202,6 @@
 			files = (
 				3070C90029153B69009BD72F /* AppDelegate.swift in Sources */,
 				30FF82CD291A9453005AAC9D /* NetworkManager.swift in Sources */,
-				30FF82D6291AB29D005AAC9D /* AboutJokeViewController.swift in Sources */,
 				3070C90229153B69009BD72F /* SceneDelegate.swift in Sources */,
 				3070C91429153BBA009BD72F /* Joke.swift in Sources */,
 				30FF82CF291A956F005AAC9D /* JokeViewController.swift in Sources */,

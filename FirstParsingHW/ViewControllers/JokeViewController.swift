@@ -13,6 +13,8 @@ class JokeViewController: UIViewController {
     @IBOutlet var setupLabel: UILabel!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
+    var switchStatus = false
+    
     // MARK: - Pivate properties
     private var joke: Joke!
     
@@ -24,26 +26,20 @@ class JokeViewController: UIViewController {
         fetchJoke()
     }
     
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let aboutJokeVC = segue.destination as? AboutJokeViewController else { return }
-        aboutJokeVC.joke = joke
-    }
-    
-    // MARK: - Public methods
+    // MARK: - Private methods
     private func fetchJoke() {
         activityIndicator.stopAnimating()
-        NetworkManager.shared.fetchJoke(form: Link.url.rawValue) { [weak self] result in
+        NetworkManager.shared.fetchJoke(from: Link.url.rawValue) { [weak self] result in
             switch result {
             case .success(let joke):
                 self?.joke = joke
-                if self?.joke.type == "single" {
-                    self?.jokeLabel.text = self?.joke.joke
-                    self?.setupLabel.text = ""
-                } else {
-                    self?.jokeLabel.text = self?.joke.delivery
-                    self?.setupLabel.text = self?.joke.setup
-                }
+                    if self?.joke.type == "single" {
+                        self?.jokeLabel.text = self?.joke.joke
+                        self?.setupLabel.text = ""
+                    } else {
+                        self?.jokeLabel.text = self?.joke.delivery
+                        self?.setupLabel.text = self?.joke.setup
+                    }
             case .failure(let error):
                 print(error.localizedDescription)
             }

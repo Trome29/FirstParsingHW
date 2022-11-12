@@ -16,7 +16,7 @@ class NetworkManager {
     
     private init() {}
     
-    func fetchJoke(form url: String, completion: @escaping(Result<Joke, AFError>) -> Void) {
+    func fetchJoke(from url: String, completion: @escaping(Result<Joke, AFError>) -> Void) {
         AF.request(url)
             .validate()
             .responseJSON { dataResponse in
